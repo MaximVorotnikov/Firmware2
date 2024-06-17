@@ -129,6 +129,7 @@ def generate_launch_description():
                     # '/uav1/mono_camera/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image@sensor_msgs/msg/Image@gz.msgs.Image',
+                    '/lidar@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
                     # '/world/default/model/uav2/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     # '/world/default/model/uav3/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     # '/uav3/camera@sensor_msgs/msg/Image@gz.msgs.Image',
@@ -154,6 +155,7 @@ def generate_launch_description():
         remappings=[
                     ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image', '/uav1/camera'),
                     ('/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image', '/uav1/depth_camera'),
+                    ('/lidar', '/uav1/lidar'),
                     # ('/world/default/model/uav2/link/mono_cam/base_link/sensor/imager/image', '/uav2/camera'),
                     # ('/world/default/model/uav3/link/mono_cam/base_link/sensor/imager/image', '/uav3/camera'),
                     ('/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/image', '/uav1/camera_down')],

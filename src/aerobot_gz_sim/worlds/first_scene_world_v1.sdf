@@ -165,7 +165,7 @@
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>30 0 0 0 0 0</pose>
+            <pose>0 0 0.5 0 0 1.57</pose>
         </include>
 
     </world>   

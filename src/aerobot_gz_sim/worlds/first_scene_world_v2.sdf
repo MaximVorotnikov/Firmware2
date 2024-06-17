@@ -158,6 +158,11 @@
             <static>true</static>
             <pose>4.171270 13.632973 0 0 0 0</pose>
         </include>
+        <include>
+            <name>uav1</name>
+            <uri>model://x500_mono_cam_forward_down_drone</uri>
+            <pose>0 0 0.5 0 0 1.57</pose>
+        </include>
 
      </world>   
 </sdf>

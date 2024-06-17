@@ -20,6 +20,11 @@
       <pose>.12 .01 .242 0 0 0</pose>
       <name>depth_cam_drone</name>
     </include>
+    <include merge='true'>
+      <uri>model://lidar</uri>
+      <pose>.12 .03 .3 0 0 0</pose>
+      <name>lidar</name>
+    </include>
 
     <joint name="CameraForwardJoint1" type="fixed">
       <parent>base_link</parent>
@@ -35,6 +40,11 @@
       <parent>base_link</parent>
       <child>depth_cam_drone/base_link</child>
       <pose relative_to="base_link" degrees="true">.12 .01 .242 0 0 0</pose>
+    </joint>
+    <joint name="LidarJoint1" type="fixed">
+      <parent>base_link</parent>
+      <child>lidar/base_link</child>
+      <pose relative_to="base_link" degrees="true">.12 .03 .3 0 0 0</pose>
     </joint>
   </model>
 
