@@ -30,7 +30,7 @@ def generate_launch_description():
 
     spawn_agressivniy_drone1 = ExecuteProcess(
         cmd=[[
-            'PX4_SYS_AUTOSTART=4012 PX4_GZ_MODEL_NAME=uav1 ~/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 0',
+            'PX4_SYS_AUTOSTART=4013 PX4_GZ_MODEL_NAME=uav1 ~/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 0',
         ]],
         shell=True
     )
@@ -128,7 +128,7 @@ def generate_launch_description():
                     # '/r0/rgbd_camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
                     # '/uav1/mono_camera/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
-                    '/world/default/model/uav1/link/depth_cam/base_link/sensor/depth_cam/depth_image@sensor_msgs/msg/Image@gz.msgs.Image',
+                    '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image@sensor_msgs/msg/Image@gz.msgs.Image',
                     # '/world/default/model/uav2/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     # '/world/default/model/uav3/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     # '/uav3/camera@sensor_msgs/msg/Image@gz.msgs.Image',
@@ -153,7 +153,7 @@ def generate_launch_description():
                          
         remappings=[
                     ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image', '/uav1/camera'),
-                    ('/world/default/model/uav1/link/depth_cam/base_link/sensor/depth_cam/depth_image', '/uav1/depth_camera'),
+                    ('/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image', '/uav1/depth_camera'),
                     # ('/world/default/model/uav2/link/mono_cam/base_link/sensor/imager/image', '/uav2/camera'),
                     # ('/world/default/model/uav3/link/mono_cam/base_link/sensor/imager/image', '/uav3/camera'),
                     ('/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/image', '/uav1/camera_down')],

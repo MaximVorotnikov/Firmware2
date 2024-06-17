@@ -164,12 +164,11 @@
         </include>
         <include>
             <name>uav1</name>
-            <uri>model://x500_mono_cam_forward_down</uri>
+            <uri>model://x500_mono_cam_forward_down_drone</uri>
             <pose>30 0 0 0 0 0</pose>
-            <!-- <pose relative_to='world'>0 0 10 0 0 0</pose> -->
         </include>
 
-     </world>   
+    </world>   
 </sdf>
  
   
