@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <model name="house2_small">
+        <static>true</static>
+        <link name="link">
+            <collision name="collision1">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://house_scene_1_wall_w_door_small/meshes/scene_1_wall_w_door_small.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual_walls2">
+              <pose>0 0 0 0 0 0</pose>
+              <geometry>
+              <mesh>
+                 <uri>model://house_scene_1_wall_w_door_small/meshes/scene_1_wall_w_door_small.dae</uri>
+              </mesh>
+              </geometry>
+             </visual>
+        </link>        
+    </model>
+</sdf>
+

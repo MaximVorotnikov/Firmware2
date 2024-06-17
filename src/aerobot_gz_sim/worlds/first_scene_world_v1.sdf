@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <world name="default">
+        <physics type="ode">
+            <max_step_size>0.004</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        <real_time_update_rate>250</real_time_update_rate>
+        </physics>
+        <plugin name="gz::sim::systems::Physics" filename="gz-sim-physics-system"/>
+        <plugin name="gz::sim::systems::UserCommands" filename="gz-sim-user-commands-system"/>
+        <plugin name="gz::sim::systems::SceneBroadcaster" filename="gz-sim-scene-broadcaster-system"/>
+        <plugin name="gz::sim::systems::Contact" filename="gz-sim-contact-system"/>
+        <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system"/>
+        <plugin name="gz::sim::systems::AirPressure" filename="gz-sim-air-pressure-system"/>
+        <plugin name="gz::sim::systems::ApplyLinkWrench" filename="gz-sim-apply-link-wrench-system"/>
+        <plugin name="gz::sim::systems::NavSat" filename="gz-sim-navsat-system"/>
+        <plugin name="gz::sim::systems::Sensors" filename="gz-sim-sensors-system">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+
+
+
+        <gravity>0 0 -9.8</gravity>
+        <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+        <atmosphere type="adiabatic"/>
+        <scene>
+            <grid>false</grid>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <background>0.7 0.7 0.7 1</background>
+            <shadows>true</shadows>
+        </scene>
+        <include>
+            <uri>model://sun</uri>
+            <pose relative_to='world'>0 0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://ground_my</uri>
+            <pose relative_to='world'>0 0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://house_scene_1_walls_out</uri>
+            <static>true</static>
+            <pose relative_to='world'>0 0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_w_win_1</name>
+            <uri>model://house_scene_1_wall_w_window</uri>
+            <static>true</static>
+            <pose>-2.243223 13.283944 0 0 0 1.567493</pose>
+        </include>
+        
+        <include>
+            <name>wall_w_win_2</name>
+            <uri>model://house_scene_1_wall_w_window</uri>
+            <static>true</static>
+            <pose>0.083877 12.639949 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_w_win_3</name>
+            <uri>model://house_scene_1_wall_w_window</uri>
+            <static>true</static>
+            <pose>-3.983081 12.464193 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_w_door_1</name>
+            <uri>model://house_scene_1_wall_w_door</uri>
+            <static>true</static>
+            <pose>-5.389788 12.134013 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_w_door_2</name>
+            <uri>model://house_scene_1_wall_w_door</uri>
+            <static>true</static>
+            <pose>-0.273567 8.225039 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_w_door_3</name>
+            <uri>model://house_scene_1_wall_w_door</uri>
+            <static>true</static>
+            <pose>4.144635 8.225039 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_1</name>
+            <uri>model://house_scene_1_wall</uri>
+            <static>true</static>
+            <pose>0.995554 7.159050 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_2</name>
+            <uri>model://house_scene_1_wall</uri>
+            <static>true</static>
+            <pose>-1.921930 14.302383 0 0 0 -1.570796</pose>
+        </include>
+        
+        <include>
+            <name>wall_3</name>
+            <uri>model://house_scene_1_wall</uri>
+            <static>true</static>
+            <pose>-5.499550 12.299837 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_4</name>
+            <uri>model://house_scene_1_wall</uri>
+            <static>true</static>
+            <pose>-4.311431 12.298409 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall_5</name>
+            <uri>model://house_scene_1_wall</uri>
+            <static>true</static>
+            <pose>3.070581 14.176468 0 0 0 1.570840</pose>
+        </include>
+        
+        <include>
+            <uri>model://platform</uri>
+            <static>true</static>
+            <pose>0 0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>0.890739 9 0.11 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>2cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>5.126372 14.444223 0.11 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>3cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>-3 9 0.11 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>4cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>-3.2 14.2 0.11 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>5cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>-3 18.3 0.11 0 0 0</pose>
+        </include>
+        <include>
+            <name>uav1</name>
+            <uri>model://x500_mono_cam_forward_down</uri>
+            <pose>30 0 0 0 0 0</pose>
+            <!-- <pose relative_to='world'>0 0 10 0 0 0</pose> -->
+        </include>
+
+     </world>   
+</sdf>
+ 
+  
+ 

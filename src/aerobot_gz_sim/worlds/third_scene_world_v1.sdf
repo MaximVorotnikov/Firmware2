@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <world name="default">
+        <physics type="ode">
+            <max_step_size>0.004</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        <real_time_update_rate>250</real_time_update_rate>
+        </physics>
+        <plugin name="gz::sim::systems::Physics" filename="gz-sim-physics-system"/>
+        <plugin name="gz::sim::systems::UserCommands" filename="gz-sim-user-commands-system"/>
+        <plugin name="gz::sim::systems::SceneBroadcaster" filename="gz-sim-scene-broadcaster-system"/>
+        <plugin name="gz::sim::systems::Contact" filename="gz-sim-contact-system"/>
+        <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system"/>
+        <plugin name="gz::sim::systems::AirPressure" filename="gz-sim-air-pressure-system"/>
+        <plugin name="gz::sim::systems::ApplyLinkWrench" filename="gz-sim-apply-link-wrench-system"/>
+        <plugin name="gz::sim::systems::NavSat" filename="gz-sim-navsat-system"/>
+        <plugin name="gz::sim::systems::Sensors" filename="gz-sim-sensors-system">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+
+        <gravity>0 0 -9.8</gravity>
+        <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+        <atmosphere type="adiabatic"/>
+        <scene>
+            <grid>false</grid>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <background>0.7 0.7 0.7 1</background>
+            <shadows>true</shadows>
+        </scene>
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        
+        <include>
+            <uri>model://ground_third</uri>
+            <pose>0 0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://road_2</uri>
+            <static>true</static>
+            <pose>0 0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>1cyl</name>
+            <uri>model://cylinder_1</uri>
+            <static>true</static>
+            <pose>-10.63 -18.62 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>2cyl</name>
+            <uri>model://cylinder_1</uri>
+            <static>true</static>
+            <pose>-0.41 8.27 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>3cyl</name>
+            <uri>model://cylinder_0.5</uri>
+            <static>true</static>
+            <pose>-21.17 -13.919 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>4cyl</name>
+            <uri>model://cylinder_0.5</uri>
+            <static>true</static>
+            <pose>-1.88 -9.93 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>5cyl</name>
+            <uri>model://cylinder_0.75</uri>
+            <static>true</static>
+            <pose>15.99 4.57 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>6cyl</name>
+            <uri>model://cylinder_0.75</uri>
+            <static>true</static>
+            <pose>-14.3 9.48 0 0 0 0</pose>
+        </include>
+        
+        <include>
+	        <name>1frame</name>
+            <uri>model://frame_1.2</uri>
+            <static>true</static>
+            <pose>2.6536 15.3801 0 0 0 -2.218753</pose>
+        </include>
+
+        <include>
+	        <name>2frame</name>
+            <uri>model://frame_1.2</uri>
+            <static>true</static>
+            <pose>-7.2792 7.681 0 0 0 2.750801</pose>
+        </include>
+
+        <include>
+                <name>3frame</name>
+                <uri>model://frame_1.2</uri>
+                <static>true</static>
+                <pose>-4.0561 -16.0751 0 0 0 0.971245</pose>
+        </include>
+
+        <include>
+	        <name>4frame</name>
+            <uri>model://frame_2</uri>
+            <static>true</static>
+            <pose>-18.1450 -16.9065 0 0 0 -0.595086</pose>
+        </include>
+
+        <include>
+	        <name>5frame</name>
+            <uri>model://frame_1.8</uri>
+            <static>true</static>
+            <pose>-21.4538 -1.1445 0 0 0 -1.787275</pose>
+        </include>
+
+	    <include>
+	        <name>6frame</name>
+            <uri>model://frame_2</uri>
+            <static>true</static>
+            <pose>1.6932 -3.6166 0 0 0 0.282743</pose>
+        </include>
+
+	    <include>
+	        <name>7frame</name>
+            <uri>model://frame_1.8</uri>
+            <static>true</static>
+            <pose>10.7204 -1.8407 0 0 0 0.260014</pose>
+        </include>
+
+        <include>
+	        <name>8frame</name>
+            <uri>model://frame_1.5</uri>
+            <static>true</static>
+            <pose>-20.2542 5.3696 0 0 0 -2.083714</pose>
+        </include>
+
+	    <include>
+	        <name>9frame</name>
+            <uri>model://frame_1.8</uri>
+            <static>true</static>
+            <pose>16.2086 12.4618 0 0 0 1.887200</pose>
+        </include>
+
+	    <include>
+	        <name>10frame</name>
+            <uri>model://frame_1</uri>
+            <static>true</static>
+            <pose>8.5252 18.3121 0 0 0 -3.092744</pose>
+        </include>
+       
+        <include>
+            <uri>model://platform</uri>
+            <static>true</static>
+            <pose>-22.6515 -6.4665 0 0 0 -2.537643</pose>
+        </include>
+       
+    </world>   
+</sdf>
+ 

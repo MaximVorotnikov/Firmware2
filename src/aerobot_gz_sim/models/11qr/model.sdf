@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <model name="11qr">
+        <static>true</static>
+        <link name="link">
+             <collision name="collision11">
+                <pose>0 0 0.27 0 0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://11qr/meshes/qr.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual11">
+              
+              <pose>0 0 0.27 0 0 0</pose>
+              <geometry>
+              <mesh>
+                 <uri>model://11qr/meshes/qr11.dae</uri>
+              </mesh>
+              </geometry>
+             </visual>
+        </link>        
+    </model>
+</sdf>
+
