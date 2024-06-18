@@ -148,7 +148,7 @@
             <pose>23.1998 4.8247 0 0 0 2.282291</pose>
         </include>
 
-	<include>
+	    <include>
 	    <name>10frame</name>
             <uri>model://frame_1</uri>
             <static>true</static>
@@ -158,13 +158,13 @@
         <include>
             <uri>model://platform</uri>
             <static>true</static>
-            <pose>22.9745 -5.9737 0 0 0 3.054361</pose>
+            <pose>22.9745 -5.9737 0 0 0 0.75</pose>
         </include>
         
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>22.97 -5.97 0.5 0 0 3.05</pose>
+            <pose>22.97 -5.97 0.5 0 0 -2.39</pose>
         </include>
        
      </world>   
