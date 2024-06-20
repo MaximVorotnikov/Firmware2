@@ -22,7 +22,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
         launch_arguments={
-            'gz_args': '-r first_scene_world_v2.sdf'
+            'gz_args': '-r first_scene_world_v1.sdf'
         }.items(),
     )
 
