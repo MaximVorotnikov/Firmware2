@@ -37,6 +37,22 @@ def generate_launch_description():
 
     ld.add_action(spawn_agressivniy_drone1)
 
+    args0 = {
+        'fcu_url': 'udp://:14540@localhost:14580',
+        'tgt_system' : '1',
+        }.items()     
+
+    launch_action = GroupAction([
+        PushRosNamespace('uav1'),
+        IncludeLaunchDescription(
+            XMLLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('mavros'), 'launch/'),
+            '/px4.launch']), launch_arguments=args0
+        ),
+    ])
+
+    ld.add_action(launch_action)
+
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
