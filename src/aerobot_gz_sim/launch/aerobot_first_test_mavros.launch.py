@@ -16,9 +16,6 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     ld = LaunchDescription()
-    # epoch_time = int(time.time())
-
-    # print(epoch_time)
 
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
@@ -26,17 +23,11 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
         launch_arguments={
-            # 'gz_args': '-r first_scene_world_v1.sdf'
             'gz_args': '-r first_scene_world_v1.sdf'
         }.items(),
     ),
     ])
-    # gz_sim = ExecuteProcess(
-    #     cmd=[[
-    #         'gz sim -r first_scene_world_v1.sdf',
-    #     ]],
-    #     shell=True
-    # )
+
     ld.add_action(gz_sim)
 
     spawn_agressivniy_drone1 = ExecuteProcess(

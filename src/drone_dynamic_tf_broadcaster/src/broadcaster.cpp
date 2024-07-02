@@ -25,7 +25,6 @@ class FramePublisher : public rclcpp::Node
         void handle_drone_pose(const std::shared_ptr<geometry_msgs::msg::PoseStamped> msg)
         {
             geometry_msgs::msg::TransformStamped t;
-            RCLCPP_INFO_STREAM(this->get_logger(), "HUJ");
 
             // Read message content and assign it to
             // corresponding tf variables

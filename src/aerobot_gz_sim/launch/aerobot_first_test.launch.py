@@ -37,6 +37,42 @@ def generate_launch_description():
 
     ld.add_action(spawn_agressivniy_drone1)
 
+    laser2base_link = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        exec_name="static_transform_laser_to_base_link",
+        arguments=["0", "0", "0", "0", "0", "0", "base_link", "uav1/lidar/base_link/laser"]
+    )
+
+    ld.add_action(laser2base_link)
+
+    depth2base_link = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        exec_name="static_transform_depth_to_base_link",
+        arguments=["0", "0", "0", "0", "0", "0", "base_link", "uav1/depth_cam_drone/base_link/depth_cam"]
+    )
+
+    ld.add_action(depth2base_link)
+
+    depth2base_link = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        exec_name="static_transform_odom_to_map",
+        arguments=["0", "0", "0", "0", "0", "0", "map", "odom"]
+    )
+
+    ld.add_action(depth2base_link)
+
+    odom2base_link = Node(
+        package="drone_dynamic_tf_broadcaster",
+        executable="broadcaster",
+        exec_name="drone_dynamic_tf_broadcaster",
+        namespace="uav1"
+    )
+
+    ld.add_action(odom2base_link)
+
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
@@ -45,6 +81,7 @@ def generate_launch_description():
                     '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/lidar/base_link/sensor/laser/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
                     '/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
+                    '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked',
                     ],
          parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',}],
                          
@@ -52,6 +89,7 @@ def generate_launch_description():
                     ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image', '/uav1/camera'),
                     ('/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image', '/uav1/depth_camera'),
                     ('/world/default/model/uav1/link/lidar/base_link/sensor/laser/scan', '/uav1/scan'),
+                    ('/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image/points', '/uav1/depth/cloud'),
                     ('/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/image', '/uav1/camera_down')],
         output='screen'
         )
