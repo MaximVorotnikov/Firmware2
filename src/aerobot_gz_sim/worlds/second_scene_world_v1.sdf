@@ -136,56 +136,48 @@
         </include>
         
         <include>
-            <name>2qr</name>
+            <name>vehicle_qr2</name>
             <uri>model://3qr</uri>
-            <static>true</static>
-            <pose>-0.1136 17.62 0 0 0 0</pose>
+            <pose>-0.1 17.62 1 0 0 0</pose>
         </include>
         <include>
 
-            <name>3qr</name>
+            <name>vehicle_qr3</name>
             <uri>model://4qr</uri>
-            <static>true</static>
-            <pose>5.144 17.62 0 0 0 0</pose>
+            <pose>5.144 17.62 1 0 0 0</pose>
         </include>
 
         <include>
-            <name>4qr</name>
+            <name>vehicle_qr4</name>
             <uri>model://1qr</uri>
-            <static>true</static>
-            <pose>-5.25 12.49 0 0 0 0</pose>
+            <pose>-5.25 12.49 1 0 0 0</pose>
         </include>
 
         <include>
-            <name>5qr</name>
+            <name>vehicle_qr5</name>
             <uri>model://7qr</uri>
-            <static>true</static>
-            <pose>0.035 12.33 0 0 0 0</pose>
+            <pose>0.035 12.33 1 0 0 0</pose>
         </include>
         
         <include>
-            <name>6qr</name>
+            <name>vehicle_qr6</name>
             <uri>model://5qr</uri>
-            <static>true</static>
-            <pose>5.14 12.446 0 0 0 0</pose>
+            <pose>5.14 12.446 1 0 0 0</pose>
         </include>
         <include>
-            <name>7qr</name>
+            <name>vehicle_qr7</name>
             <uri>model://11qr</uri>
-            <static>true</static>
-            <pose>-5.25 7.55 0 0 0 0</pose>
+            <pose>-4.75 7.55 1 0 0 0</pose>
         </include>
         <include>
-            <name>8qr</name>
+            <name>vehicle_qr8</name>
             <uri>model://12qr</uri>
-            <static>true</static>
-            <pose>-0.05 7.55 0 0 0 0</pose>
+            <pose>-0.05 7.55 1 0 0 0</pose>
         </include>
         <include>
-            <name>9qr</name>
+            <name>vehicle_qr9</name>
             <uri>model://10qr</uri>
-            <static>true</static>
-            <pose>5.14 7.55 0 0 0 0</pose>
+            <pose>5.14 7.55 1 0 0 0</pose>
         </include>
   
         <include>
