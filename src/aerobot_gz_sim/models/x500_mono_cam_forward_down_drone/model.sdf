@@ -11,17 +11,17 @@
     </include> -->
     <include merge='true'>
       <uri>model://mono_cam</uri>
-      <pose>.12 .03 .242 0 0 0</pose>
+      <pose>0.12 0 .13 0 0 0</pose>
       <name>mono_cam</name>
     </include>
     <include merge='true'>
       <uri>model://mono_cam_down</uri>
-      <pose>.06 .03 .242 0 90 0</pose>
+      <pose>0 0 0.12 0 1.57 0</pose>
       <name>mono_cam_down</name>
     </include>
     <include merge='true'>
       <uri>model://depth_cam_drone</uri>
-      <pose>.12 .01 .242 0 0 0</pose>
+      <pose>.12 0 .13 0 0 0</pose>
       <name>depth_cam_drone</name>
     </include>
     <include merge='true'>

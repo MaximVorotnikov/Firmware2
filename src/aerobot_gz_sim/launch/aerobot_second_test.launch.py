@@ -10,12 +10,25 @@ from launch.actions import IncludeLaunchDescription, GroupAction
 from launch_ros.actions import PushRosNamespace
 from launch_xml.launch_description_sources import XMLLaunchDescriptionSource
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-
+import launch_ros
 from launch_ros.actions import Node
 
 def generate_launch_description():
     ld = LaunchDescription()
 
+    for i in range(2, 10):
+        ld.add_action(
+            launch_ros.actions.Node(
+                package="car_with_qr", 
+                executable="car_drive",
+                namespace=f"/model/vehicle_qr{i}",
+                parameters=[
+                    {'id': i},
+                ],
+                emulate_tty=True,
+                output="screen"
+            )
+        )
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     gz_sim = IncludeLaunchDescription(
@@ -93,7 +106,6 @@ def generate_launch_description():
                     '/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked',
                     ],
-        # parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',}],   
         parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',
                         'qos_overrides./model.subscriber.reliability': 'reliable'}],   
         remappings=[
