@@ -110,6 +110,7 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[ 
+                    '/world/default/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
                     '/model/vehicle_qr2/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
                     '/model/vehicle_qr3/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
                     '/model/vehicle_qr4/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
@@ -128,6 +129,7 @@ def generate_launch_description():
         parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',
                         'qos_overrides./model.subscriber.reliability': 'reliable'}],   
         remappings=[
+                    ('/world/default/clock', '/clock'),
                     ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image', '/uav1/camera'),
                     ('/model/vehicle_qr2/cmd_vel', '/vehicle_qr2/cmd_vel'),
                     ('/model/vehicle_qr3/cmd_vel', '/vehicle_qr3/cmd_vel'),

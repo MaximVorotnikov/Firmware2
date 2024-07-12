@@ -79,6 +79,7 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[ 
+                    '/world/default/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
                     '/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/lidar/base_link/sensor/laser/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
@@ -88,6 +89,7 @@ def generate_launch_description():
          parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',}],
                          
         remappings=[
+                    ('/world/default/clock', '/clock'),
                     ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image', '/uav1/camera'),
                     ('/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image', '/uav1/depth_camera'),
                     ('/world/default/model/uav1/link/lidar/base_link/sensor/laser/scan', '/uav1/scan'),
