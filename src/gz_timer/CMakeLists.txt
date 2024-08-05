@@ -18,10 +18,10 @@ include_directories(include)
 add_executable(gz_timer_sim src/gz_timer_sim.cpp) # include/Quaternion_Solution.h include/wheeltec_robot.h
 ament_target_dependencies(gz_timer_sim  ${COLCON_VARS})
 
-install(
-    DIRECTORY include/${PROJECT_NAME}
-    DESTINATION include
-)
+# install(
+#     DIRECTORY include/${PROJECT_NAME}
+#     DESTINATION include
+# )
 
 install(
     TARGETS gz_timer_sim

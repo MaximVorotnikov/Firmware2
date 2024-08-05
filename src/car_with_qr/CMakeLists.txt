@@ -19,10 +19,10 @@ include_directories(include)
 add_executable(car_drive src/car_drive.cpp) # include/Quaternion_Solution.h include/wheeltec_robot.h
 ament_target_dependencies(car_drive  ${COLCON_VARS})
 
-install(
-    DIRECTORY include/${PROJECT_NAME}
-    DESTINATION include
-)
+# install(
+#     DIRECTORY include/${PROJECT_NAME}
+#     DESTINATION include
+# )
 
 install(
     TARGETS car_drive
