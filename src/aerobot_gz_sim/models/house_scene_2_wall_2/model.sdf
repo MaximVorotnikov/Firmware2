@@ -7,7 +7,7 @@
                 <pose>0 0 0.05 0 0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://house_scene_2_wall_2/meshes/scene_2_wall_2.dae</uri>
+                        <uri>model://house_scene_2_wall_2/meshes/sc2qr.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -15,7 +15,7 @@
               <pose>0 0 0.05 0 0 0</pose>
               <geometry>
               <mesh>
-                 <uri>model://house_scene_2_wall_2/meshes/scene_2_wall_2.dae</uri>
+                 <uri>model://house_scene_2_wall_2/meshes/sc2qr.dae</uri>
               </mesh>
               </geometry>
              </visual>
