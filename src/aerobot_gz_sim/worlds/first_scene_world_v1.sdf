@@ -128,11 +128,17 @@
             <static>true</static>
             <pose>3.070581 14.176468 0 0 0 1.570840</pose>
         </include>
+        <include>
+            <name>wall_small_1</name>
+            <uri>model://house_scene_1_wall_small</uri>
+            <static>true</static>
+            <pose>3.024304 6.060440 0 0 0 1.570796</pose>
+        </include>
         
         <include>
             <uri>model://platform</uri>
             <static>true</static>
-            <pose>0 0 0 0 0 0</pose>
+            <pose>-6 7 0.15 0 0 1.57</pose>
         </include>
         
         <include>
@@ -140,6 +146,20 @@
             <uri>model://1cube</uri>
             <static>true</static>
             <pose>0.890739 9 0.11 0 0 0</pose>
+        </include>
+
+        <include>
+            <name>6cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>0.890739 14 0.11 0 0 0</pose>
+        </include>
+
+        <include>
+            <name>7cube</name>
+            <uri>model://1cube</uri>
+            <static>true</static>
+            <pose>4 7 0.11 0 0 0</pose>
         </include>
         
         <include>
@@ -172,9 +192,9 @@
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>0 0 0.5 0 0 1.57</pose>
+            <pose>-6 7 0.6 0 0 1.57</pose>
         </include>
-
+<!-- -4.311431 12.298409 0 0 0 0 -->
     </world>   
 </sdf>
  

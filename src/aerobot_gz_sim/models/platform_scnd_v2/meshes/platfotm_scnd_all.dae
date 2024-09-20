@@ -30,14 +30,14 @@
     </effect>
     <effect id="Material_002-effect">
       <profile_COMMON>
-        <newparam sid="circle_png-surface">
+        <newparam sid="texture_v2_png-surface">
           <surface type="2D">
-            <init_from>circle_png</init_from>
+            <init_from>texture_v2_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="circle_png-sampler">
+        <newparam sid="texture_v2_png-sampler">
           <sampler2D>
-            <source>circle_png-surface</source>
+            <source>texture_v2_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -46,7 +46,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="circle_png-sampler" texcoord="UVMap"/>
+              <texture texture="texture_v2_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -57,14 +57,14 @@
     </effect>
     <effect id="Material-effect">
       <profile_COMMON>
-        <newparam sid="circle_png-surface">
+        <newparam sid="texture_v2_png-surface">
           <surface type="2D">
-            <init_from>circle_png</init_from>
+            <init_from>texture_v2_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="circle_png-sampler">
+        <newparam sid="texture_v2_png-sampler">
           <sampler2D>
-            <source>circle_png-surface</source>
+            <source>texture_v2_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -73,7 +73,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="circle_png-sampler" texcoord="UVMap"/>
+              <texture texture="texture_v2_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -84,11 +84,11 @@
     </effect>
   </library_effects>
   <library_images>
-    <image id="circle_png" name="circle_png">
-      <init_from>circle.png</init_from>
+    <image id="texture_v2_png" name="texture_v2_png">
+      <init_from>texture_v2.png</init_from>
     </image>
-    <image id="circle_png" name="circle_png">
-      <init_from>circle.png</init_from>
+    <image id="texture_v2_png" name="texture_v2_png">
+      <init_from>texture_v2.png</init_from>
     </image>
   </library_images>
   <library_materials>
