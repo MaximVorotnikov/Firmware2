@@ -16,19 +16,20 @@ from launch_ros.actions import Node
 def generate_launch_description():
     ld = LaunchDescription()
 
-    for i in range(2, 10):
-        ld.add_action(
-            launch_ros.actions.Node(
-                package="car_with_qr", 
-                executable="car_drive",
-                namespace=f"/model/vehicle_qr{i}",
-                parameters=[
-                    {'id': i},
-                ],
-                emulate_tty=True,
-                output="screen"
-            )
-        )
+    # for i in range(2, 10):
+    #     ld.add_action(
+    #         launch_ros.actions.Node(
+    #             package="car_with_qr", 
+    #             executable="car_drive",
+    #             namespace=f"/model/vehicle_qr{i}",
+    #             parameters=[
+    #                 {'id': i},
+    #             ],
+    #             emulate_tty=True,
+    #             output="screen"
+    #         )
+    #     )
+    
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     gz_sim = IncludeLaunchDescription(
