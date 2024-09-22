@@ -93,12 +93,12 @@
             <pose>-12.8777 8.9535 0 0 0 0</pose>
         </include>
         
-        <include>
+        <!-- <include>
 	    <name>1frame</name>
             <uri>model://frame_1.2</uri>
             <static>true</static>
             <pose>1.5733 -13.0252 0 0 0 0.488208</pose>
-        </include>
+        </include> -->
 
         <include>
 	    <name>2frame</name>
@@ -114,12 +114,12 @@
             <pose>-5.252354 -14.088921 0 0 0 -0.122759</pose>
         </include>
 
-	<include>
+	<!-- <include>
 	    <name>4frame</name>
             <uri>model://frame_2</uri>
             <static>true</static>
             <pose>-13.0712 -13.7066 0 0 0 0.549127</pose>
-        </include>
+        </include> -->
 
         <include>
 	    <name>5frame</name>
@@ -135,26 +135,26 @@
             <pose>16.0574 -8.9155 0 0 0 0.030093</pose>
         </include>
 
-	<include>
+	<!-- <include>
 	    <name>7frame</name>
             <uri>model://frame_1.8</uri>
             <static>true</static>
             <pose>9.1393 5.4717 0 0 0 2.904474</pose>
-        </include>
+        </include> -->
 
-        <include>
+        <!-- <include>
 	    <name>8frame</name>
             <uri>model://frame_1.5</uri>
             <static>true</static>
             <pose>-20.0188 6.1494 0 0 0 -2.4173</pose>
-        </include>
+        </include> -->
 
-	<include>
+	<!-- <include>
 	    <name>9frame</name>
             <uri>model://frame_1.8</uri>
             <static>true</static>
             <pose>23.1998 4.8247 0 0 0 2.282291</pose>
-        </include>
+        </include> -->
 
 	    <include>
 	    <name>10frame</name>
