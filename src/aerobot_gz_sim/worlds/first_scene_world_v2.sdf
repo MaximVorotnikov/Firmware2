@@ -115,58 +115,58 @@
         
         <include>
             <name>cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_blue</uri>
             <static>true</static>
-            <pose>0.450661 16.79 0.11 0 0 0</pose>
+            <pose>0.450661 16.79 0.2 0 0 0</pose>
         </include>
 
         <include>
             <name>6cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_blue</uri>
             <static>true</static>
-            <pose>0.450661 10.79 0.11 0 0 0</pose>
+            <pose>0.450661 10.79 0.2 0 0 0</pose>
         </include>
 
         <include>
             <name>7cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_green</uri>
             <static>true</static>
-            <pose>5.450661 16.79 0.11 0 0 0</pose>
+            <pose>5.450661 16.79 0.2 0 0 0</pose>
         </include>
 
         <include>
             <name>8cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_green</uri>
             <static>true</static>
-            <pose>4.450661 10.79 0.11 0 0 0</pose>
+            <pose>4.450661 10.79 0.2 0 0 0</pose>
         </include>
         
         <include>
             <name>2cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_red</uri>
             <static>true</static>
-            <pose>-4.506818 17.1795 0.11 0 0 0</pose>
+            <pose>-4.506818 17.1795 0.2 0 0 0</pose>
         </include>
         
         <include>
             <name>3cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_red</uri>
             <static>true</static>
-            <pose>-2.89 11.88 0.11 0 0 0</pose>
+            <pose>-2.89 11.88 0.2 0 0 0</pose>
         </include>
         
         <include>
             <name>4cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_yellow</uri>
             <static>true</static>
-            <pose>-6.51 7.131 0.11 0 0 0</pose>
+            <pose>-6.51 7.131 0.2 0 0 0</pose>
         </include>
         
         <include>
             <name>5cube</name>
-            <uri>model://1cube</uri>
+            <uri>model://1cube_yellow</uri>
             <static>true</static>
-            <pose>5.1726 7.2202 0.11 0 0 0</pose>
+            <pose>5.1726 7.2202 0.2 0 0 0</pose>
         </include>
         
         <include>

@@ -1,22 +1,21 @@
 <?xml version="1.0"?>
 <sdf version="1.5">
-    <model name="frame_1">
+    <model name="1cube">
         <static>true</static>
         <link name="link">
             <collision name="collision1">
                 <pose>0 0 0 0 0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://frame_1/meshes/frame_1.dae</uri>
+                        <uri>model://1cube_red/meshes/cube.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
-            <visual name="visual1">
-              
+            <visual name="visual1"> 
               <pose>0 0 0 0 0 0</pose>
               <geometry>
               <mesh>
-                 <uri>model://frame_1/meshes/frame_1.dae</uri>
+                 <uri>model://1cube_red/meshes/cube.dae</uri>
               </mesh>
               </geometry>
              </visual>
