@@ -12,20 +12,15 @@
             <izz>0.000166667</izz>
           </inertia>
         </inertial>
-        <!-- <collision name="collision">
+
+        <!-- <visual name="visual">
           <geometry>
             <box>
-              <size>0.1 0.1 0.1</size>
+              <size>0.01 0.01 0.01</size>
             </box>
           </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.1 0.1 0.1</size>
-            </box>
-          </geometry>
-        </visual> -->
+        </visual>  -->
+
         <sensor name="depth_cam" type="depth_camera">
           <pose>0 0 0 0 0 0</pose>
           <camera>
