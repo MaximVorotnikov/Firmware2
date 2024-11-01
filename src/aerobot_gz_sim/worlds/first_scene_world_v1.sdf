@@ -196,12 +196,67 @@
             <static>true</static>
             <pose>-3 18.3 0.2 0 0 0</pose>
         </include>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// config down-->
+        <!-- <include>
+            <name>cube</name>
+            <uri>model://1cube_green</uri>
+            <static>true</static>
+            <pose>0.890739 9 0.2 0 0 0</pose>
+        </include>
+
+        <include>
+            <name>6cube</name>
+            <uri>model://1cube_green</uri>
+            <static>true</static>
+            <pose>0.890739 14 0.2 0 0 0</pose>
+        </include>
+
+        <include>
+            <name>7cube</name>
+            <uri>model://1cube_blue</uri>
+            <static>true</static>
+            <pose>5 10.9 0.2 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>2cube</name>
+            <uri>model://1cube_blue</uri>
+            <static>true</static>
+            <pose>5.126372 17.7 0.2 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>3cube</name>
+            <uri>model://1cube_yellow</uri>
+            <static>true</static>
+            <pose>-2.27 6.01 0.2 0 0 0</pose>
+        </include>
+
+        <include>
+            <name>8cube</name>
+            <uri>model://1cube_yellow</uri>
+            <static>true</static>
+            <pose>-6 10.5 0.2 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>4cube</name>
+            <uri>model://1cube_red</uri>
+            <static>true</static>
+            <pose>-3.2 14.2 0.2 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>5cube</name>
+            <uri>model://1cube_red</uri>
+            <static>true</static>
+            <pose>-5.49 18.3 0.2 0 0 0</pose>
+        </include> -->
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
             <pose>-6 7 0.6 0 0 1.57</pose>
         </include>
-<!-- -4.311431 12.298409 0 0 0 0 -->
     </world>   
 </sdf>
  

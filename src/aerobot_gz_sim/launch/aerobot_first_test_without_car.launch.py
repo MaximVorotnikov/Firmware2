@@ -17,8 +17,6 @@ def generate_launch_description():
     ld = LaunchDescription()
 
     # for i in range(2, 10):
-    #     # if i == 1:
-    #     #     continue
     #     ld.add_action(
     #         launch_ros.actions.Node(
     #             package="car_with_qr", 
@@ -31,7 +29,7 @@ def generate_launch_description():
     #             output="screen"
     #         )
     #     )
-
+    
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     gz_sim = IncludeLaunchDescription(
@@ -53,21 +51,6 @@ def generate_launch_description():
 
     ld.add_action(spawn_agressivniy_drone1)
 
-    args0 = {
-        'fcu_url': 'udp://:14540@localhost:14580',
-        'tgt_system' : '1',
-        }.items()     
-
-    launch_action = GroupAction([
-        PushRosNamespace('uav1'),
-        IncludeLaunchDescription(
-            XMLLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('mavros'), 'launch/'),
-            '/px4.launch']), launch_arguments=args0
-        ),
-    ])
-
-    ld.add_action(launch_action)
 
     laser2base_link = Node(
         package="tf2_ros",
@@ -104,12 +87,14 @@ def generate_launch_description():
     )
 
     ld.add_action(odom2base_link)
- 
+
 
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[ 
+                    '/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
+                    '/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo',
                     '/world/default/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
                     '/model/vehicle_qr2/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
                     '/model/vehicle_qr3/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
@@ -125,10 +110,11 @@ def generate_launch_description():
                     '/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/image@sensor_msgs/msg/Image@gz.msgs.Image',
                     '/world/default/model/uav1/link/depth_cam_drone/base_link/sensor/depth_cam/depth_image/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked',
                     ],
-        # parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',}],   
         parameters=[{'qos_overrides./uav1.subscriber.reliability': 'reliable',
                         'qos_overrides./model.subscriber.reliability': 'reliable'}],   
         remappings=[
+                    ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/camera_info', '/uav1/camera_info'),
+                    ('/world/default/model/uav1/link/mono_cam_down/base_link/sensor/imager/camera_info', '/uav1/camera_down_info'),
                     ('/world/default/clock', '/clock'),
                     ('/world/default/model/uav1/link/mono_cam/base_link/sensor/imager/image', '/uav1/camera'),
                     ('/model/vehicle_qr2/cmd_vel', '/vehicle_qr2/cmd_vel'),
