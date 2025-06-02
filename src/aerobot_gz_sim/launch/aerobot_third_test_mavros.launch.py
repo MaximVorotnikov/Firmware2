@@ -30,7 +30,7 @@ def generate_launch_description():
 
     spawn_agressivniy_drone1 = ExecuteProcess(
         cmd=[[
-            'PX4_SYS_AUTOSTART=4013 PX4_GZ_MODEL_NAME=uav1 ~/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 0',
+            'PX4_SYS_AUTOSTART=4999 PX4_GZ_MODEL_NAME=uav1 ~/PX4-Autopilot/build/px4_sitl_default/bin/px4 -i 0',
         ]],
         shell=True
     )
