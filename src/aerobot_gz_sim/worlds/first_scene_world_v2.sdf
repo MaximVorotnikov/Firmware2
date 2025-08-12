@@ -36,9 +36,19 @@
             <elevation>0</elevation>
         </spherical_coordinates>
     
-        <include>
-            <uri>model://sun</uri>
-        </include>
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
         
         <include>
             <uri>model://ground_my</uri>
@@ -114,59 +124,66 @@
         </include>
         
         <include>
-            <name>cube</name>
-            <uri>model://1cube_blue</uri>
+            <name>figure_circle_blue</name>
+            <uri>model://figure_circle_blue</uri>
             <static>true</static>
             <pose>0.450661 16.79 0.2 0 0 0</pose>
         </include>
 
         <include>
-            <name>6cube</name>
-            <uri>model://1cube_blue</uri>
+            <name>figure_circle_green</name>
+            <uri>model://figure_circle_green</uri>
             <static>true</static>
             <pose>0.450661 10.79 0.2 0 0 0</pose>
         </include>
 
         <include>
-            <name>7cube</name>
-            <uri>model://1cube_green</uri>
+            <name>figure_circle_red</name>
+            <uri>model://figure_circle_red</uri>
             <static>true</static>
-            <pose>5.450661 16.79 0.2 0 0 0</pose>
+            <pose>5.0 16.79 0.2 0 0 0</pose>
         </include>
 
         <include>
-            <name>8cube</name>
-            <uri>model://1cube_green</uri>
+            <name>figure_square_blue</name>
+            <uri>model://figure_square_blue</uri>
             <static>true</static>
             <pose>4.450661 10.79 0.2 0 0 0</pose>
         </include>
         
         <include>
-            <name>2cube</name>
-            <uri>model://1cube_red</uri>
+            <name>figure_square_green</name>
+            <uri>model://figure_square_green</uri>
             <static>true</static>
             <pose>-4.506818 17.1795 0.2 0 0 0</pose>
         </include>
         
         <include>
-            <name>3cube</name>
-            <uri>model://1cube_red</uri>
+            <name>figure_square_red</name>
+            <uri>model://figure_square_red</uri>
             <static>true</static>
-            <pose>-2.89 11.88 0.2 0 0 0</pose>
+            <pose>-3.4 11.88 0.2 0 0 0</pose>
         </include>
         
         <include>
-            <name>4cube</name>
-            <uri>model://1cube_yellow</uri>
+            <name>figure_triangle_blue</name>
+            <uri>model://figure_triangle_blue</uri>
             <static>true</static>
             <pose>-6.51 7.131 0.2 0 0 0</pose>
         </include>
         
         <include>
-            <name>5cube</name>
-            <uri>model://1cube_yellow</uri>
+            <name>figure_triangle_green</name>
+            <uri>model://figure_triangle_green</uri>
             <static>true</static>
             <pose>5.1726 7.2202 0.2 0 0 0</pose>
+        </include>
+
+        <include>
+            <name>figure_triangle_red</name>
+            <uri>model://figure_triangle_red</uri>
+            <static>true</static>
+            <pose>-6.2 10.88 0.2 0 0 0</pose>
         </include>
         
         <include>
