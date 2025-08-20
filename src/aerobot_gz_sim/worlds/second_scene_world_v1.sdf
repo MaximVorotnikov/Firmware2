@@ -71,8 +71,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-
-        
         <include>
             <name>wall6</name>
             <uri>model://house_scene_2_wall_6</uri>
@@ -108,8 +106,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
- 
-        
         <include>
             <name>wall12</name>
             <uri>model://house_scene_2_wall_12</uri>
@@ -118,7 +114,6 @@
         </include>
 
         <include>
-
             <name>vehicle_qr3</name>
             <uri>model://3qr</uri>
             <pose>5.144 17.62 1 0 0 0</pose>
@@ -127,16 +122,17 @@
         <include>
             <name>qr4</name>
             <uri>model://11qr_without_car</uri>
+            <static>false</static>
             <pose>-4.25 12.49 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>qr5</name>
             <uri>model://9qr_without_car</uri>
+            <static>false</static>
             <pose>0.035 12.33 0.1 0 0 0</pose>
         </include>
         
- 
         <include>
             <name>vehicle_qr7</name>
             <uri>model://11qr</uri>
@@ -148,26 +144,30 @@
             <uri>model://7qr</uri>
             <pose>5.14 7.55 1 0 0 0</pose>
         </include>
-  
+
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-6.1695 12.49 0.27 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://platform_scnd</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-5.29 17.4187 0.27 0 0 0</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>-6.17 12.49 0.5 0 0 0</pose>
+            <pose>-6.17 12.49 0.55 0 0 0</pose>
         </include>
         <!-- ////////////////////////////////////////////// config down-->
         <!-- <include>
+            <uri>model://ground_my</uri>
+        </include>
+        
+        <include>
             <name>walls</name>
             <uri>model://house_scene_2_walls_out</uri>
             <static>true</static>
@@ -185,7 +185,7 @@
             <name>wall2</name>
             <uri>model://house_scene_2_wall_2</uri>
             <static>true</static>
-            <pose>9.81 12.43 0 0 0 1.58</pose>
+            <pose>0 12.5 0 0 0 0</pose>
         </include>
         
         <include>
@@ -194,7 +194,7 @@
             <static>true</static>
             <pose>0 12.5 0 0 0 0</pose>
         </include>
-
+        
         
         <include>
             <name>wall6</name>
@@ -207,86 +207,85 @@
             <name>wall7</name>
             <uri>model://house_scene_2_wall_7</uri>
             <static>true</static>
-            <pose>0.22 2.29 0.01 0 0 1.6</pose>
+            <pose>0 12.5 0 0 0 0</pose>
         </include>
         
         <include>
             <name>wall8</name>
             <uri>model://house_scene_2_wall_8</uri>
             <static>true</static>
-            <pose>-5.08 12.53 0 0 0 0</pose>
+            <pose>0 12.5 0 0 0 0</pose>
         </include>
         
         <include>
             <name>wall9</name>
             <uri>model://house_scene_2_wall_9</uri>
             <static>true</static>
-            <pose>-4.81 17.37 0 0 0 1.55</pose>
+            <pose>0 12.5 0 0 0 0</pose>
         </include>
         
         <include>
             <name>wall10</name>
             <uri>model://house_scene_2_wall_10</uri>
             <static>true</static>
-            <pose>0.18 17.47 0 0 0 -0.03</pose>
+            <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-  
         
         <include>
             <name>wall12</name>
             <uri>model://house_scene_2_wall_12</uri>
             <static>true</static>
-            <pose>-5.1 7.53 0 0 0 1.55</pose>
+            <pose>0 12.5 0 0 0 0</pose>
         </include>
-
+        
         <include>
-
-            <name>vehicle_qr3</name>
-            <uri>model://3qr</uri>
-            <pose>5.144 17.62 1 0 0 0</pose>
+            <name>vehicle_qr2</name>
+            <uri>model://10qr</uri>
+            <pose>0.035 12.33 1 0 0 0</pose>
         </include>
-
+        
         <include>
             <name>qr4</name>
-            <uri>model://11qr_without_car</uri>
-            <pose>-3.44 17.56 0.1 0 0 0</pose>
+            <uri>model://8qr_without_car</uri>
+            <static>false</static>
+            <pose>5.144 15.62 0.1 0 0 0</pose>
         </include>
-
         <include>
-            <name>qr5</name>
-            <uri>model://9qr_without_car</uri>
-            <pose>0.035 12.33 0.1 0 0 0</pose>
+            <name>vehicle_qr5</name>
+            <uri>model://2qr</uri>
+            <pose>-5.25 12.49 1 0 0 0</pose>
         </include>
-
+        
         <include>
             <name>vehicle_qr7</name>
-            <uri>model://11qr</uri>
-            <pose>-4.75 7.55 1 0 0 0</pose>
+            <uri>model://8qr</uri>
+            <pose>-3.25 7.55 1 0 0 0</pose>
         </include>
 
         <include>
-            <name>vehicle_qr9</name>
-            <uri>model://7qr</uri>
-            <pose>5.14 7.55 1 0 0 0</pose>
+            <name>qr9</name>
+            <uri>model://12qr_without_car</uri>
+            <static>false</static>
+            <pose>4.5 7.5 0.1 0 0 0</pose>
         </include>
-  
+
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
-            <pose>-6.17 17.5 0.27 0 0 0</pose>
+            <static>false</static>
+            <pose>5.144 17.62 0.2 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://platform_scnd_config</uri>
-            <static>true</static>
-            <pose>-5.29 12.05 0.27 0 0 0</pose>
+            <static>false</static>
+            <pose>-5.25 17.63 0.27 0 0 3.14</pose>
         </include>
-
+        
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>-6.17 17.5 0.36 0 0 0</pose>
+            <pose>5.144 17.62 0.6 0 0 0</pose>
         </include> -->
        
      </world>   

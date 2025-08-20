@@ -42,55 +42,55 @@
         
         <include>
             <uri>model://ground_third</uri>
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0.1 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://road_2</uri>
             <static>true</static>
-            <pose>0 0 0 0 0 0</pose>
+            <pose>0 0 0.1 0 0 0</pose>
         </include>
         <!-- ////////////////////////////////////////////////////////////////// -->
-        <!-- <include>
+        <include>
             <name>1cyl</name>
             <uri>model://cylinder_1</uri>
             <static>true</static>
-            <pose>-4.0561 -16.0751 0 0 0 0.971245</pose>
+            <pose>-4.0561 -16.0751 0.1 0 0 0.971245</pose>
         </include>
         
         <include>
             <name>2cyl</name>
             <uri>model://cylinder_1</uri>
             <static>true</static>
-            <pose>-7.2792 7.681 0 0 0 2.750801</pose>
+            <pose>-7.2792 7.681 0.1 0 0 2.750801</pose>
         </include>
         
         <include>
             <name>3cyl</name>
             <uri>model://cylinder_0.5</uri>
             <static>true</static>
-            <pose>-21.17 -13.919 0 0 0 0</pose>
+            <pose>-21.17 -13.919 0.1 0 0 0</pose>
         </include>
         
         <include>
             <name>4cyl</name>
             <uri>model://cylinder_0.5</uri>
             <static>true</static>
-            <pose>10.7204 -1.8407 0 0 0 0.260014</pose>
+            <pose>10.7204 -1.8407 0.1 0 0 0.260014</pose>
         </include>
         
         <include>
             <name>5cyl</name>
             <uri>model://cylinder_0.75</uri>
             <static>true</static>
-            <pose>8.5252 18.3121 0 0 0 -3.092744</pose>
+            <pose>8.5252 18.3121 0.1 0 0 -3.092744</pose>
         </include>
         
         <include>
             <name>6cyl</name>
             <uri>model://cylinder_0.75</uri>
             <static>true</static>
-            <pose>-20.2542 5.3696 0 0 0 -2.083714</pose>
+            <pose>-20.2542 5.3696 0.1 0 0 -2.083714</pose>
         </include>
         
 
@@ -99,30 +99,28 @@
 	        <name>2frame</name>
             <uri>model://frame_1.2</uri>
             <static>true</static>
-            <pose>-0.41 8.27 0 0 0 -2.36</pose>
+            <pose>-0.41 8.27 0.1 0 0 -2.36</pose>
         </include>
 
         <include>
                 <name>3frame</name>
                 <uri>model://frame_1.2</uri>
                 <static>true</static>
-                <pose>-10.63 -18.62 0 0 0 0</pose>
+                <pose>-10.63 -18.62 0.1 0 0 0</pose>
         </include>
-
-
 
 	    <include>
 	        <name>7frame</name>
             <uri>model://frame_1.8</uri>
             <static>true</static>
-            <pose>-1.88 -9.93 0 0 0 1.45</pose>
+            <pose>-1.88 -9.93 0.1 0 0 1.45</pose>
         </include>
 
         <include>
 	        <name>8frame</name>
             <uri>model://frame_1.5</uri>
             <static>true</static>
-            <pose>-14.3 9.48 0 0 0 -3.07 </pose>
+            <pose>-14.3 9.48 0.1 0 0 -3.07 </pose>
         </include>
 
 
@@ -130,22 +128,22 @@
 	        <name>10frame</name>
             <uri>model://frame_1</uri>
             <static>true</static>
-            <pose>15.99 4.57 0 0 0 1.47</pose>
+            <pose>15.99 4.57 0.1 0 0 1.47</pose>
         </include>
        
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
-            <pose>16.14 12.32 0 0 0 0.21</pose>
+            <static>false</static>
+            <pose>16.14 12.32 0.1 0 0 0.21</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>16.18 12.32 0.09 0 0 -1.28</pose>
-        </include> -->
+            <pose>16.18 12.32 0.4 0 0 -1.28</pose>
+        </include>
         <!-- //////////////////////////////////////////////// config above-->
-         <include>
+         <!-- <include>
             <name>1cyl</name>
             <uri>model://cylinder_1</uri>
             <static>true</static>
@@ -230,14 +228,14 @@
         <include>
             <uri>model://platform</uri>
             <static>true</static>
-            <pose>-22.6515 -6.4665 0 0 0 1.44</pose>
+            <pose>-22.6515 -6.4665 0.2 0 0 1.44</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>-22.65 -6.47 0.5 0 0 1.44</pose>
-        </include>
+            <pose>-22.65 -6.47 0.7 0 0 1.44</pose>
+        </include> -->
        
     </world>   
 </sdf>

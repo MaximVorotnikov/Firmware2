@@ -74,20 +74,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-        <!-- <include>
-            <name>wall4</name>
-            <uri>model://house_scene_2_wall_4</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
-        <!-- <include>
-            <name>wall5</name>
-            <uri>model://house_scene_2_wall_5</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
         <include>
             <name>wall6</name>
             <uri>model://house_scene_2_wall_6</uri>
@@ -123,13 +109,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-        <!-- <include>
-            <name>wall11</name>
-            <uri>model://house_scene_2_wall_11</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
         <include>
             <name>wall12</name>
             <uri>model://house_scene_2_wall_12</uri>
@@ -140,62 +119,53 @@
         <include>
             <name>qr2</name>
             <uri>model://9qr_without_car</uri>
+            <static>false</static>
             <pose>0.035 12.33 0.1 0 0 0</pose>
         </include>
         
-        <!-- <include>
-            <name>vehicle_qr3</name>
-            <uri>model://4qr</uri>
-            <pose>-0.1136 17.62 1 0 0 0</pose>
-        </include> -->
         <include>
             <name>qr4</name>
             <uri>model://7qr_without_car</uri>
+            <static>false</static>
             <pose>5.144 17.62 0.1 0 0 0</pose>
         </include>
         <include>
             <name>qr5</name>
             <uri>model://2qr_without_car</uri>
+            <static>false</static>
             <pose>-5.25 12.49 0.1 0 0 0</pose>
         </include>
         
-        <!-- <include>
-            <name>vehicle_qr6</name>
-            <uri>model://10qr</uri>
-            <pose>5.14 12.446 1 0 0 0</pose>
-        </include> -->
         <include>
             <name>qr7</name>
             <uri>model://9qr_without_car</uri>
+            <static>false</static>
             <pose>-3.25 7.55 0.1 0 0 0</pose>
         </include>
-        <!-- <include>
-            <name>vehicle_qr8</name>
-            <uri>model://8qr</uri>
-            <pose>-0.05 7.55 1 0 0 0</pose>
-        </include> -->
+
         <include>
             <name>qr9</name>
             <uri>model://7qr_without_car</uri>
+            <static>false</static>
             <pose>4.5 7.5 0.1 0 0 0</pose>
         </include>
   
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
-            <pose>6.14 6 0.1 0 0 0</pose>
+            <static>false</static>
+            <pose>6.14 6 0.2 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://platform_scnd_v2</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-5.25 17.63 0.27 0 0 3.14</pose>
         </include>
         
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>6.14 6 0.5 0 0 0</pose>
+            <pose>6.14 6 0.6 0 0 0</pose>
         </include>
        
      </world>   

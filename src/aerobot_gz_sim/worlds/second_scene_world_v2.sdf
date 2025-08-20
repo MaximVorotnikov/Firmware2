@@ -74,20 +74,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-        <!-- <include>
-            <name>wall4</name>
-            <uri>model://house_scene_2_wall_4</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
-        <!-- <include>
-            <name>wall5</name>
-            <uri>model://house_scene_2_wall_5</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
         <include>
             <name>wall6</name>
             <uri>model://house_scene_2_wall_6</uri>
@@ -151,6 +137,7 @@
         <include>
             <name>qr4</name>
             <uri>model://7qr_without_car</uri>
+            <static>false</static>
             <pose>5.144 17.62 0.1 0 0 0</pose>
         </include>
         <include>
@@ -177,25 +164,26 @@
         <include>
             <name>qr9</name>
             <uri>model://7qr_without_car</uri>
+            <static>false</static>
             <pose>4.5 7.5 0.1 0 0 0</pose>
         </include>
   
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
-            <pose>6.14 6 0.1 0 0 0</pose>
+            <static>false</static>
+            <pose>6.14 6 0.2 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://platform_scnd_v2</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-5.25 17.63 0.27 0 0 3.14</pose>
         </include>
         
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>6.14 6 0.5 0 0 0</pose>
+            <pose>6.14 6 0.6 0 0 0</pose>
         </include>
        
      </world>   

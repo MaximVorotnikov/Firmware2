@@ -66,7 +66,7 @@
             <static>true</static>
             <pose>-2.475 12.5 0 0 0 1.570840</pose>
         </include>
-        <!-- -3.960691 19.887342 0 0 0 0 -->
+
         <include>
             <name>wall_5</name>
             <uri>model://house_scene_1_wall</uri>
@@ -119,73 +119,48 @@
         
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-3.386255 7.582332 0.15 0 0 0</pose>
         </include>
         
-        <include>
-            <name>figure_circle_blue</name>
-            <uri>model://figure_circle_blue</uri>
-            <static>true</static>
-            <pose>0.450661 16.79 0.2 0 0 0</pose>
-        </include>
 
         <include>
             <name>figure_circle_green</name>
             <uri>model://figure_circle_green</uri>
             <static>true</static>
-            <pose>0.450661 10.79 0.2 0 0 0</pose>
+            <pose>0.450661 10.79 0.125 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_circle_red</name>
             <uri>model://figure_circle_red</uri>
             <static>true</static>
-            <pose>5.0 16.79 0.2 0 0 0</pose>
-        </include>
-
-        <include>
-            <name>figure_square_blue</name>
-            <uri>model://figure_square_blue</uri>
-            <static>true</static>
-            <pose>4.450661 10.79 0.2 0 0 0</pose>
+            <pose>5.0 16.79 0.125 0 0 0</pose>
         </include>
         
         <include>
             <name>figure_square_green</name>
             <uri>model://figure_square_green</uri>
             <static>true</static>
-            <pose>-4.506818 17.1795 0.2 0 0 0</pose>
+            <pose>-4.506818 17.1795 0.125 0 0 0</pose>
         </include>
         
         <include>
             <name>figure_square_red</name>
             <uri>model://figure_square_red</uri>
-            <static>true</static>
-            <pose>-3.4 11.88 0.2 0 0 0</pose>
+            <!-- <static>true</static> -->
+            <pose>-3.4 11.88 0.125 0 0 0</pose>
         </include>
         
-        <include>
-            <name>figure_triangle_blue</name>
-            <uri>model://figure_triangle_blue</uri>
-            <static>true</static>
-            <pose>-6.51 7.131 0.2 0 0 0</pose>
-        </include>
         
         <include>
             <name>figure_triangle_green</name>
             <uri>model://figure_triangle_green</uri>
             <static>true</static>
-            <pose>5.1726 7.2202 0.2 0 0 0</pose>
+            <pose>5.1726 7.2202 0.124 0 0 0</pose>
         </include>
 
-        <include>
-            <name>figure_triangle_red</name>
-            <uri>model://figure_triangle_red</uri>
-            <static>true</static>
-            <pose>-6.2 10.88 0.2 0 0 0</pose>
-        </include>
-        
+
         <include>
             <name>wall_w_door_small_1</name>
             <uri>model://house_scene_1_wall_w_door_small</uri>
