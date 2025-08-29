@@ -74,37 +74,37 @@
         </include>
 
         <include>
-            <uri>model://wall1</uri>
+            <uri>model://wall1_2</uri>
             <static>true</static>
             <pose relative_to='world'>0 0 0.0 0 0 0</pose>
         </include>
 
         <include>
-            <uri>model://wall2</uri>
+            <uri>model://wall2_2</uri>
             <static>true</static>
             <pose relative_to='world'>0 0 0.0 0 0 0</pose>
         </include>
 
         <include>
-            <uri>model://wall3</uri>
+            <uri>model://wall3_2</uri>
             <static>true</static>
             <pose relative_to='world'>0 0 0.0 0 0 0</pose>
         </include>
 
         <include>
-            <uri>model://wall4</uri>
+            <uri>model://wall4_2</uri>
             <static>true</static>
             <pose relative_to='world'>0 0 0.0 0 0 0</pose>
         </include>
 
         <include>
-            <uri>model://wall5</uri>
+            <uri>model://wall5_2</uri>
             <static>true</static>
             <pose relative_to='world'>0 0 0.0 0 0 0</pose>
         </include>
 
         <include>
-            <uri>model://wall6</uri>
+            <uri>model://wall6_2</uri>
             <static>true</static>
             <pose relative_to='world'>0 0 0.0 0 0 0</pose>
         </include>
