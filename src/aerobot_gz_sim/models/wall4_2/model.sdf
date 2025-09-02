@@ -8,7 +8,7 @@
                 <geometry>
                     <mesh>
                         <uri>model://wall4_2/meshes/wall4.dae</uri>
-                        <scale>1.5 1.5 1.5</scale>
+                        <scale>1.0 1.0 1.0</scale>
                     </mesh>
                 </geometry>
             </collision>
@@ -17,7 +17,7 @@
               <geometry>
               <mesh>
                  <uri>model://wall4_2/meshes/wall4.dae</uri>
-                 <scale>1.5 1.5 1.5</scale>
+                 <scale>1.0 1.0 1.0</scale>
               </mesh>
               </geometry>
              </visual>

@@ -111,53 +111,53 @@
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// test-->
 
-
         <include>
             <name>figure_circle_red</name>
             <uri>model://figure_circle_red</uri>
             <static>true</static>
-            <pose>7 5 0.0535 0 0 0</pose>
+            <pose>5 3 0.0535 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_square_blue</name>
             <uri>model://figure_square_blue</uri>
             <static>true</static>
-            <pose>7.5 -0.5 0.05 0 0 0</pose>
+            <pose>5.0 -0.5 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_triangle_green</name>
             <uri>model://figure_triangle_green</uri>
             <static>true</static>
-            <pose>5 -7 0.05 0 0 0</pose>
+            <pose>3.5 -4.5 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_circle_blue</name>
             <uri>model://figure_circle_blue</uri>
             <static>true</static>
-            <pose>-7.5 -7 0.0535 0 0 0</pose>
+            <pose>-5.0 -4.5 0.0535 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_square_red</name>
             <uri>model://figure_square_red</uri>
             <static>true</static>
-            <pose>-2 -1 0.05 0 0 0</pose>
+            <pose>-1 -1 0.1 0 0 0</pose>
         </include>
 
         <include>
             <uri>model://platform</uri>
             <static>false</static>
-            <pose>9 7 0.15 0 0 -1.57</pose>
+            <pose>5 5 0.15 0 0 -1.57</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>9 7 1 0 0 -1.57</pose>
+            <pose>5 5 1 0 0 -1.57</pose>
         </include>
+
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// additional map-->
 
@@ -165,28 +165,28 @@
             <name>figure_triangle_red</name>
             <uri>model://figure_triangle_red</uri>
             <static>true</static>
-            <pose>7 5 0.05 0 0 0</pose>
+            <pose>5 3 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_square_blue</name>
             <uri>model://figure_square_blue</uri>
             <static>true</static>
-            <pose>7.5 -0.5 0.05 0 0 0</pose>
+            <pose>5.0 -0.5 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_triangle_green</name>
             <uri>model://figure_triangle_green</uri>
             <static>true</static>
-            <pose>5 -7 0.05 0 0 0</pose>
+            <pose>3.5 -4.5 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_circle_blue</name>
             <uri>model://figure_circle_blue</uri>
             <static>true</static>
-            <pose>0 5 0.055 0 0 0</pose>
+            <pose>0 4 0.055 0 0 0</pose>
         </include>
 
         <include>
@@ -214,47 +214,47 @@
             <name>figure_triangle_red</name>
             <uri>model://figure_triangle_red</uri>
             <static>true</static>
-            <pose>7 5 0.05 0 0 0</pose>
+            <pose>5 3 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_triangle_green</name>
             <uri>model://figure_triangle_green</uri>
             <static>true</static>
-            <pose>7.5 -0.5 0.05 0 0 0</pose>
+            <pose>5.5 -0.5 0.05 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_circle_green</name>
             <uri>model://figure_circle_green</uri>
             <static>true</static>
-            <pose>-9 -5 0.055 0 0 0</pose>
+            <pose>-6 -4 0.055 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_circle_blue</name>
             <uri>model://figure_circle_blue</uri>
             <static>true</static>
-            <pose>0 5 0.055 0 0 0</pose>
+            <pose>0 4 0.055 0 0 0</pose>
         </include>
 
         <include>
             <name>figure_square_red</name>
             <uri>model://figure_square_red</uri>
             <static>true</static>
-            <pose>-3 -1 0.05 0 0 0</pose>
+            <pose>0 -1 0.05 0 0 0</pose>
         </include>
 
         <include>
             <uri>model://platform</uri>
             <static>false</static>
-            <pose>-7.5 -7 0.15 0 0 -1.57</pose>
+            <pose>-5.5 -5 0.15 0 0 -1.57</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>-7.5 -7 1 0 0 -1.57</pose>
+            <pose>-5.5 -5 1 0 0 -1.57</pose>
         </include> -->
 
 

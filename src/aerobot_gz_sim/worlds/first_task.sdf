@@ -116,53 +116,53 @@
             <name>qr1</name>
             <uri>model://3qr_without_car</uri>
             <static>false</static>
-            <pose>7 5 0.1 0 0 0</pose>
+            <pose>5 3 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr2</name>
             <uri>model://1qr</uri>
             <static>false</static>
-            <pose>7.5 -0.5 0.5 0 0 0</pose>
+            <pose>5.0 -0.5 0.5 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr3</name>
             <uri>model://2qr</uri>
             <static>false</static>
-            <pose>5 -7 0.5 0 0 0</pose>
+            <pose>3.5 -4.5 0.5 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr4</name>
             <uri>model://6qr</uri>
             <static>false</static>
-            <pose>-7.5 -7 0.5 0 0 0</pose>
+            <pose>-5.0 -4.5 0.5 0 0 0</pose>
         </include>
 
         <include>
             <name>qr5</name>
             <uri>model://6qr_without_car</uri>
             <static>false</static>
-            <pose>-2 -1 0.1 0 0 0</pose>
+            <pose>-1 -1 0.1 0 0 0</pose>
         </include>
 
         <include>
             <uri>model://platform_with_qr_new_test</uri>
             <static>false</static>
-            <pose>0 5 0.27 0 0 0</pose>
+            <pose>0 3 0.27 0 0 0</pose>
         </include>
 
         <include>
             <uri>model://platform</uri>
             <static>false</static>
-            <pose>9 7 0.15 0 0 -1.57</pose>
+            <pose>5 5 0.15 0 0 -1.57</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>9 7 1 0 0 -1.57</pose>
+            <pose>5 5 1 0 0 -1.57</pose>
         </include>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// additional map-->
@@ -171,28 +171,28 @@
             <name>qr1</name>
             <uri>model://3qr_without_car</uri>
             <static>false</static>
-            <pose>7 5 0.1 0 0 0</pose>
+            <pose>5 3 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr2</name>
             <uri>model://1qr</uri>
             <static>false</static>
-            <pose>7.5 -0.5 0.5 0 0 0</pose>
+            <pose>5.0 -0.5 0.5 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr3</name>
             <uri>model://2qr</uri>
             <static>false</static>
-            <pose>5 -7 0.5 0 0 0</pose>
+            <pose>3.5 -4.5 0.5 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr4</name>
             <uri>model://5qr</uri>
             <static>false</static>
-            <pose>0 5 0.5 0 0 0</pose>
+            <pose>0 4 0.5 0 0 0</pose>
         </include>
 
         <include>
@@ -205,7 +205,7 @@
         <include>
             <uri>model://platform_with_qr_new_additional</uri>
             <static>false</static>
-            <pose>-7.5 -7 0.27 0 0 0</pose>
+            <pose>-5.5 -5 0.27 0 0 0</pose>
         </include>
 
         <include>
@@ -226,28 +226,28 @@
             <name>qr1</name>
             <uri>model://3qr_without_car</uri>
             <static>false</static>
-            <pose>7 5 0.1 0 0 0</pose>
+            <pose>5 3 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr2</name>
             <uri>model://1qr</uri>
             <static>false</static>
-            <pose>7.5 -0.5 0.5 0 0 0</pose>
+            <pose>5.5 -0.5 0.5 0 0 0</pose>
         </include>
 
         <include>
             <name>qr3</name>
             <uri>model://6qr_without_car</uri>
             <static>false</static>
-            <pose>-9 -5 0.1 0 0 0</pose>
+            <pose>-6 -4 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>vehicle_qr4</name>
             <uri>model://5qr</uri>
             <static>false</static>
-            <pose>0 5 0.5 0 0 0</pose>
+            <pose>0 4 0.5 0 0 0</pose>
         </include>
 
         <include>
@@ -260,19 +260,19 @@
         <include>
             <uri>model://platform_with_qr_new_credit</uri>
             <static>false</static>
-            <pose>5 -7 0.27 0 0 0</pose>
+            <pose>3 -5 0.27 0 0 0</pose>
         </include>
 
         <include>
             <uri>model://platform</uri>
             <static>false</static>
-            <pose>-7.5 -7 0.15 0 0 -1.57</pose>
+            <pose>-5.5 -5 0.15 0 0 -1.57</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://x500_mono_cam_forward_down_drone</uri>
-            <pose>-7.5 -7 1 0 0 -1.57</pose>
+            <pose>-5.5 -5 1 0 0 -1.57</pose>
         </include> -->
 
 
