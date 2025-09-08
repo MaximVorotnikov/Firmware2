@@ -5,7 +5,7 @@
 
         <link name="qr3">    
              <collision name="collision">
-                <pose>0 0 0.1 0 0 0</pose>
+                <pose>0 0 0.05 0 0 0</pose>
                 <geometry>
                     <mesh>
                         <uri>model://3qr/meshes/qr.stl</uri>
@@ -13,7 +13,7 @@
                 </geometry>
             </collision>
             <visual name="visual">
-              <pose>0 0 0.1 0 0 0</pose>
+              <pose>0 0 0.05 0 0 0</pose>
               <geometry>
               <mesh>
                  <uri>model://3qr/meshes/qr3.dae</uri>
@@ -25,20 +25,23 @@
       <link name='chassis'>
         <pose>0 0 0 0 0 0</pose>
         <inertial>
-          <mass>1.14395</mass>
+          <!-- Масса уменьшена в 8 раз (2^3) из-за объемного масштабирования -->
+          <mass>0.142994</mass>
           <inertia>
-            <ixx>0.126164</ixx>
+            <!-- Моменты инерции уменьшены в 32 раза (2^5) -->
+            <ixx>0.003942</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.416519</iyy>
+            <iyy>0.013016</iyy>
             <iyz>0</iyz>
-            <izz>0.481014</izz>
+            <izz>0.015032</izz>
           </inertia>
         </inertial>
         <visual name='visual'>
           <geometry>
             <box>
-              <size>0.5 0.55 0.2</size>
+              <!-- Размер уменьшен в 2 раза -->
+              <size>0.25 0.275 0.1</size>
             </box>
           </geometry>
           <material>
@@ -50,32 +53,36 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>0.5 0.55 0.2</size>
+              <!-- Размер уменьшен в 2 раза -->
+              <size>0.25 0.275 0.1</size>
             </box>
           </geometry>
         </collision>
       </link>
 
+      <!-- Колеса уменьшены в 2 раза -->
       <link name='front_left_wheel'>
-        <pose>0.2 0.35 -0.025 -1.5707 0 0</pose>
+        <pose>0.1 0.175 -0.0125 -1.5707 0 0</pose>
         <inertial>
-          <mass>2</mass>
+          <!-- Масса уменьшена в 8 раз -->
+          <mass>0.25</mass>
           <inertia>
-            <ixx>0.145833</ixx>
+            <!-- Моменты инерции уменьшены в 32 раза -->
+            <ixx>0.004557</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.145833</iyy>
+            <iyy>0.004557</iyy>
             <iyz>0</iyz>
-            <izz>0.125</izz>
+            <izz>0.003906</izz>
           </inertia>
         </inertial>
         <visual name='visual'>
           <pose>0 0 0 1.5707 0 0</pose>
           <geometry>
-            <!-- scale mesh to radius == 0.3 -->
             <mesh>
               <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Mecanum lift/tip/files/meshes/mecanum_wheel_left.STL</uri>
-              <scale>0.003 0.003 0.003</scale>
+              <!-- Масштаб уменьшен в 2 раза -->
+              <scale>0.0015 0.0015 0.0015</scale>
             </mesh>
           </geometry>
           <material>
@@ -86,8 +93,9 @@
         </visual>
         <collision name='collision'>
           <geometry>
+            <!-- Радиус уменьшен в 2 раза -->
             <sphere>
-              <radius>0.17</radius>
+              <radius>0.085</radius>
             </sphere>
           </geometry>
           <surface>
@@ -103,25 +111,24 @@
       </link>
 
       <link name='rear_left_wheel'>
-        <pose>-0.2 0.35 -0.025 -1.5707 0 0</pose>
+        <pose>-0.1 0.175 -0.0125 -1.5707 0 0</pose>
         <inertial>
-          <mass>2</mass>
+          <mass>0.25</mass>
           <inertia>
-            <ixx>0.145833</ixx>
+            <ixx>0.004557</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.145833</iyy>
+            <iyy>0.004557</iyy>
             <iyz>0</iyz>
-            <izz>0.125</izz>
+            <izz>0.003906</izz>
           </inertia>
         </inertial>
         <visual name='visual'>
           <pose>0 0 0 1.5707 0 0</pose>
           <geometry>
-            <!-- scale mesh to radius == 0.3 -->
             <mesh>
               <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Mecanum lift/tip/files/meshes/mecanum_wheel_right.STL</uri>
-              <scale>0.003 0.003 0.003</scale>
+              <scale>0.0015 0.0015 0.0015</scale>
             </mesh>
           </geometry>
           <material>
@@ -133,7 +140,7 @@
         <collision name='collision'>
           <geometry>
             <sphere>
-              <radius>0.17</radius>
+              <radius>0.085</radius>
             </sphere>
           </geometry>
           <surface>
@@ -149,25 +156,24 @@
       </link>
 
       <link name='front_right_wheel'>
-        <pose>0.2 -0.35 -0.025 -1.5707 0 0</pose>
+        <pose>0.1 -0.175 -0.0125 -1.5707 0 0</pose>
         <inertial>
-          <mass>2</mass>
+          <mass>0.25</mass>
           <inertia>
-            <ixx>0.145833</ixx>
+            <ixx>0.004557</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.145833</iyy>
+            <iyy>0.004557</iyy>
             <iyz>0</iyz>
-            <izz>0.125</izz>
+            <izz>0.003906</izz>
           </inertia>
         </inertial>
         <visual name='visual'>
           <pose>0 0 0 1.5707 0 0</pose>
           <geometry>
-            <!-- scale mesh to radius == 0.3 -->
             <mesh>
               <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Mecanum lift/tip/files/meshes/mecanum_wheel_right.STL</uri>
-              <scale>0.003 0.003 0.003</scale>
+              <scale>0.0015 0.0015 0.0015</scale>
             </mesh>
           </geometry>
           <material>
@@ -179,7 +185,7 @@
         <collision name='collision'>
           <geometry>
             <sphere>
-              <radius>0.17</radius>
+              <radius>0.085</radius>
             </sphere>
           </geometry>
           <surface>
@@ -195,25 +201,24 @@
       </link>
 
       <link name='rear_right_wheel'>
-        <pose>-0.2 -0.35 -0.025 -1.5707 0 0</pose>
+        <pose>-0.1 -0.175 -0.0125 -1.5707 0 0</pose>
         <inertial>
-          <mass>2</mass>
+          <mass>0.25</mass>
           <inertia>
-            <ixx>0.145833</ixx>
+            <ixx>0.004557</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.145833</iyy>
+            <iyy>0.004557</iyy>
             <iyz>0</iyz>
-            <izz>0.125</izz>
+            <izz>0.003906</izz>
           </inertia>
         </inertial>
         <visual name='visual'>
           <pose>0 0 0 1.5707 0 0</pose>
           <geometry>
-            <!-- scale mesh to radius == 0.3 -->
             <mesh>
               <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Mecanum lift/tip/files/meshes/mecanum_wheel_left.STL</uri>
-              <scale>0.003 0.003 0.003</scale>
+              <scale>0.0015 0.0015 0.0015</scale>
             </mesh>
           </geometry>
           <material>
@@ -225,7 +230,7 @@
         <collision name='collision'>
           <geometry>
             <sphere>
-              <radius>0.17</radius>
+              <radius>0.085</radius>
             </sphere>
           </geometry>
           <surface>
@@ -240,6 +245,7 @@
         </collision>
       </link>
 
+      <!-- joint остается без изменений -->
       <joint name='qr_joint' type='fixed'>
         <parent>chassis</parent>
         <child>qr3</child>
@@ -248,6 +254,7 @@
         </axis>
       </joint>
 
+      <!-- joints остаются без изменений -->
       <joint name='front_left_wheel_joint' type='revolute'>
         <parent>chassis</parent>
         <child>front_left_wheel</child>
@@ -303,13 +310,14 @@
         <front_right_joint>front_right_wheel_joint</front_right_joint>
         <back_left_joint>rear_left_wheel_joint</back_left_joint>
         <back_right_joint>rear_right_wheel_joint</back_right_joint>
-        <wheel_separation>1.25</wheel_separation>
-        <wheelbase>1.511</wheelbase>
-        <wheel_radius>0.3</wheel_radius>
+        <!-- Параметры уменьшены в 2 раза -->
+        <wheel_separation>0.625</wheel_separation>
+        <wheelbase>0.7555</wheelbase>
+        <!-- Радиус колеса уменьшен в 2 раза -->
+        <wheel_radius>0.15</wheel_radius>
         <min_acceleration>-5</min_acceleration>
         <max_acceleration>5</max_acceleration>
       </plugin>
 
     </model>
 </sdf>
-
