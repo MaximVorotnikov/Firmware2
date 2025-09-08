@@ -11,13 +11,13 @@
     </include> -->
     <include merge='true'>
       <uri>model://mono_cam</uri>
-      <pose>0.07 0 .1 0 -1.57 0</pose>
+      <pose>0.07 0 .1 0 0 0</pose>
       <!-- <pose>0.07 0 .1 0 -0.349066 0</pose> -->
       <name>mono_cam</name>
     </include>
     <include merge='true'>
       <uri>model://mono_cam_down</uri>
-      <pose>0 0 0.1105 0 0 0</pose>
+      <pose>0 0 0.1105 0 1.57 0</pose>
       <name>mono_cam_down</name>
     </include>
     <include merge='true'>
