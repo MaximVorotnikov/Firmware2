@@ -38,7 +38,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
         launch_arguments={
-            'gz_args': '-r second_scene_world_v1.sdf'
+            'gz_args': '-r first_task_world_test_with_car.sdf'
         }.items(),
     )
 

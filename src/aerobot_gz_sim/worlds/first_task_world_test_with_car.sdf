@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <world name="default">
+        <physics type="ode">
+            <max_step_size>0.004</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        <real_time_update_rate>250</real_time_update_rate>
+        </physics>
+        <plugin name="gz::sim::systems::Physics" filename="gz-sim-physics-system"/>
+        <plugin name="gz::sim::systems::UserCommands" filename="gz-sim-user-commands-system"/>
+        <plugin name="gz::sim::systems::SceneBroadcaster" filename="gz-sim-scene-broadcaster-system"/>
+        <plugin name="gz::sim::systems::Contact" filename="gz-sim-contact-system"/>
+        <plugin name="gz::sim::systems::Imu" filename="gz-sim-imu-system"/>
+        <plugin name="gz::sim::systems::AirPressure" filename="gz-sim-air-pressure-system"/>
+        <plugin name="gz::sim::systems::ApplyLinkWrench" filename="gz-sim-apply-link-wrench-system"/>
+        <plugin name="gz::sim::systems::NavSat" filename="gz-sim-navsat-system"/>
+        <plugin name="gz::sim::systems::Sensors" filename="gz-sim-sensors-system">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+        
+        <gravity>0 0 -9.8</gravity>
+        <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+        <atmosphere type="adiabatic"/>
+        <scene>
+            <grid>false</grid>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <background>0.7 0.7 0.7 1</background>
+            <shadows>true</shadows>
+        </scene>
+
+        <spherical_coordinates>
+            <surface_model>EARTH_WGS84</surface_model>
+            <world_frame_orientation>ENU</world_frame_orientation>
+            <latitude_deg>47.397971057728974</latitude_deg>
+            <longitude_deg> 8.546163739800146</longitude_deg>
+            <elevation>0</elevation>
+        </spherical_coordinates>
+    
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <include>
+      <name>ground_my</name>
+      <uri>model://ground_my</uri>
+      <pose relative_to="world">0 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_floor</name>
+      <uri>model://0_floor</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_1</name>
+      <uri>model://0_wall_1</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_2</name>
+      <uri>model://0_wall_2</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_3</name>
+      <uri>model://0_wall_3</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_4</name>
+      <uri>model://0_wall_4</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_5</name>
+      <uri>model://0_wall_5</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_6</name>
+      <uri>model://0_wall_6</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>0_wall_7</name>
+      <uri>model://0_wall_7</uri>
+      <static>true</static>
+      <pose relative_to="world">0 0 0.3 0 0 0</pose>
+    </include>
+
+    <include>
+        <name>vehicle_qr2</name>
+        <uri>model://2qr</uri>
+        <static>false</static>
+        <pose>3.7856374470307368 -2.3004851712486714 1.00000000298023224 0 0 0</pose>
+    </include>
+
+    <include>
+        <name>vehicle_qr3</name>
+        <uri>model://3qr_without_car</uri>
+        <static>false</static>
+        <pose>3.693244027809703 4.3306695162860231 1.00000000298023224 0 0 0</pose>
+    </include>
+
+    <include>
+        <name>vehicle_qr4</name>
+        <uri>model://4qr_without_car</uri>
+        <static>false</static>
+        <pose>-4.3503051632143475 4.556837327545475 1.00000000298023224 0 0 0</pose>
+    </include>
+
+    <include>
+        <name>vehicle_qr5</name>
+        <uri>model://5qr</uri>
+        <static>false</static>
+        <pose>-5.9504872610343309 1.0389659662918644 1.00000000298023224 0 0 0</pose>
+    </include>
+
+    <include>
+        <name>vehicle_qr6</name>
+        <uri>model://6qr</uri>
+        <static>false</static>
+        <pose>-0.48709321726665289 0.89845085647787637 1.00000000298023224 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://platform</uri>
+        <static>false</static>
+        <pose>3.7856374470307368 -4.3004851712486714 0.30000000298023224 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://0_land_platform_test</uri>
+        <static>false</static>
+        <pose>-0.21630634251636804 -4.5646165661315199 0.40000000596046448 0 0 0</pose>
+    </include>
+    
+    <include>
+        <name>uav1</name>
+        <uri>model://x500_mono_cam_forward_down_drone</uri>
+        <pose>3.7856374470307368 -4.3004851712486714 0.6 0 0 1.5707963267948966</pose>
+    </include>
+
+  </world>
+</sdf>
