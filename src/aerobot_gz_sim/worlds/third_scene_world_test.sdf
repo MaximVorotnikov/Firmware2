@@ -56,7 +56,22 @@
         </include>
         
         <include>
-            <uri>model://road_3_test</uri>
+            <uri>model://road1</uri>
+            <static>true</static>
+            <pose>0 0 0.02 0 0 0</pose>
+        </include>
+        <include>
+            <uri>model://road1_1</uri>
+            <static>true</static>
+            <pose>0 0 0.02 0 0 0</pose>
+        </include>
+        <include>
+            <uri>model://road1_2</uri>
+            <static>true</static>
+            <pose>0 0 0.02 0 0 0</pose>
+        </include>
+        <include>
+            <uri>model://road1_3</uri>
             <static>true</static>
             <pose>0 0 0.02 0 0 0</pose>
         </include>

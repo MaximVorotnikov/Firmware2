@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.5.2 LTS commit date:2025-08-19, commit time:15:00, hash:ab25eae04993</authoring_tool>
+    </contributor>
+    <created>2026-09-25T11:42:26</created>
+    <modified>2026-09-25T11:42:26</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_002-effect">
+      <profile_COMMON>
+        <newparam sid="road_texture_png-surface">
+          <surface type="2D">
+            <init_from>road_texture_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="road_texture_png-sampler">
+          <sampler2D>
+            <source>road_texture_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="road_texture_png-sampler"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="road_texture_png" name="road_texture_png">
+      <init_from>road_texture.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_002-material" name="Material.002">
+      <instance_effect url="#Material_002-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Mesh-mesh" name="Mesh">
+      <mesh>
+        <source id="Mesh-mesh-positions">
+          <float_array id="Mesh-mesh-positions-array" count="168">3.02475 -5.633099 0 1.981165 -6.2304 0 0.5498662 -7.314518 0 -0.7169385 -8.564431 0 -1.856309 -9.924334 0 -2.905305 -11.33843 0 -3.900988 -12.75092 0 -4.880416 -14.10601 0 -5.88065 -15.3479 0 -6.938752 -16.42078 0 -8.09178 -17.26885 0 -9.376795 -17.83632 0 -10.83086 -18.06739 0 -12.49102 -17.90627 0 -14.16829 -17.40125 0 -15.73513 -16.638 0 -17.17074 -15.64848 0 -18.4543 -14.46463 0 -19.56501 -13.11844 0 -20.48204 -11.64185 0 -21.18459 -10.06684 0 -21.65185 -8.425357 0 -21.86299 -6.749369 0 -21.79722 -5.070837 0 -21.43371 -3.421722 0 -20.75165 -1.83399 0 -19.69753 -0.4620888 0 -18.42053 0.3302196 0 2.933706 -5.454766 0 1.870657 -6.063207 0 0.4186959 -7.162976 0 -0.8641552 -8.42872 0 -2.013413 -9.800426 0 -3.067378 -11.22122 0 -4.063774 -12.63473 0 -5.039451 -13.98462 0 -6.030107 -15.21461 0 -7.070021 -16.26905 0 -8.192625 -17.09475 0 -9.433834 -17.64288 0 -10.83699 -17.86586 0 -12.45216 -17.7091 0 -14.09519 -17.21439 0 -15.63401 -16.46479 0 -17.04556 -15.49185 0 -18.3087 -14.32685 0 -19.40219 -13.00152 0 -20.30494 -11.54792 0 -20.99613 -9.998379 0 -21.45532 -8.38525 0 -21.6625 -6.740726 0 -21.59807 -5.09648 0 -21.24247 -3.483265 0 -20.57778 -1.935966 0 -19.56113 -0.6128304 0 -18.34428 0.1421598 0</float_array>
+          <technique_common>
+            <accessor source="#Mesh-mesh-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Mesh-mesh-normals">
+          <float_array id="Mesh-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Mesh-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#Mesh-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_002-material" count="54">
+          <input semantic="VERTEX" source="#Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Mesh-mesh-normals" offset="1"/>
+          <p>28 0 1 0 0 0 29 0 2 0 1 0 31 0 2 0 30 0 32 0 3 0 31 0 33 0 4 0 32 0 34 0 5 0 33 0 35 0 6 0 34 0 36 0 7 0 35 0 37 0 8 0 36 0 38 0 9 0 37 0 39 0 10 0 38 0 39 0 12 0 11 0 40 0 13 0 12 0 41 0 14 0 13 0 42 0 15 0 14 0 43 0 16 0 15 0 44 0 17 0 16 0 45 0 18 0 17 0 47 0 18 0 46 0 48 0 19 0 47 0 49 0 20 0 48 0 50 0 21 0 49 0 51 0 22 0 50 0 52 0 23 0 51 0 53 0 24 0 52 0 54 0 25 0 53 0 54 0 27 0 26 0 28 0 29 0 1 0 29 0 30 0 2 0 31 0 3 0 2 0 32 0 4 0 3 0 33 0 5 0 4 0 34 0 6 0 5 0 35 0 7 0 6 0 36 0 8 0 7 0 37 0 9 0 8 0 38 0 10 0 9 0 39 0 11 0 10 0 39 0 40 0 12 0 40 0 41 0 13 0 41 0 42 0 14 0 42 0 43 0 15 0 43 0 44 0 16 0 44 0 45 0 17 0 45 0 46 0 18 0 47 0 19 0 18 0 48 0 20 0 19 0 49 0 21 0 20 0 50 0 22 0 21 0 51 0 23 0 22 0 52 0 24 0 23 0 53 0 25 0 24 0 54 0 26 0 25 0 54 0 55 0 27 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="BézierCircle" name="BézierCircle" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Mesh-mesh" name="BézierCircle">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_002-material" target="#Material_002-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
