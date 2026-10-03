@@ -79,42 +79,42 @@
         <include>
             <name>1cyl</name>
             <uri>model://cylinder_1</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>-5.3792 -14.5216 0.1 0 0 0.971245</pose>
         </include>
         
         <include>
             <name>2cyl</name>
             <uri>model://cylinder_1</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>-8.2795 -1.0854 0.1 0 0 2.7508</pose>
         </include>
         
         <include>
             <name>3cyl</name>
             <uri>model://cylinder_0.5</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>-19.8388 -12.4976 0.1 0 0 0</pose>
         </include>
         
         <include>
             <name>4cyl</name>
             <uri>model://cylinder_0.5</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>10.4829 -2.8788 0.1 0 0 0.260014</pose>
         </include>
         
         <include>
             <name>5cyl</name>
             <uri>model://cylinder_0.75</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>8.6388 11.9265 0.1 0 0 -3.09274</pose>
         </include>
         
         <include>
             <name>6cyl</name>
             <uri>model://cylinder_0.75</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>-21.6634 -5.1352 0.1 0 0 -2.08371</pose>
         </include>
         
@@ -123,28 +123,28 @@
         <include>
 	        <name>2frame</name>
             <uri>model://frame_1.2</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>3.2840 8.5074 0.1 0 0 -2.36</pose>
         </include>
 
         <include>
                 <name>3frame</name>
                 <uri>model://frame_1.2</uri>
-                <static>false</static>
+                <static>true</static>
                 <pose>-11.8569 -17.8694 0.1 0 0 0</pose>
         </include>
 
 	    <include>
 	        <name>7frame</name>
             <uri>model://frame_1.8</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>-1.5971 -9.4510 0.1 0 0 1.0</pose>
         </include>
 
         <include>
 	        <name>8frame</name>
             <uri>model://frame_1.5</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>-14.2886 0.3213 0.1 0 0 -3.3</pose>
         </include>
 
@@ -152,13 +152,13 @@
 	    <include>
 	        <name>10frame</name>
             <uri>model://frame_1</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>15.3617 3.0162 0.1 0 0 1.2</pose>
         </include>
        
         <include>
             <uri>model://platform</uri>
-            <static>false</static>
+            <static>true</static>
             <pose>17.2744 10.9371 0.05 0 0 0.21</pose>
         </include>
 
