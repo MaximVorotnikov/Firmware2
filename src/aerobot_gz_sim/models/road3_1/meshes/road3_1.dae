@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.5.2 LTS commit date:2025-08-19, commit time:15:00, hash:ab25eae04993</authoring_tool>
+    </contributor>
+    <created>2026-09-25T11:51:15</created>
+    <modified>2026-09-25T11:51:15</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material_003-effect">
+      <profile_COMMON>
+        <newparam sid="road_texture_png_001-surface">
+          <surface type="2D">
+            <init_from>road_texture_png_001</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="road_texture_png_001-sampler">
+          <sampler2D>
+            <source>road_texture_png_001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="road_texture_png_001-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="road_texture_png_001" name="road_texture_png_001">
+      <init_from>road_texture.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_003-material" name="Material.003">
+      <instance_effect url="#Material_003-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Mesh_002-mesh" name="Mesh.002">
+      <mesh>
+        <source id="Mesh_002-mesh-positions">
+          <float_array id="Mesh_002-mesh-positions-array" count="246">-1.374629 3.000338 0 -1.88649 3.692087 0 -2.460597 4.378782 0 -3.044434 5.069561 0 -3.585482 5.773564 0 -4.031223 6.499931 0 -4.32914 7.257802 0 -4.426716 8.056316 0 -4.271435 8.90461 0 -3.687762 10.32426 0 -2.971543 11.57795 0 -2.131585 12.67745 0 -1.176696 13.63454 0 -0.1156864 14.46097 0 1.042636 15.16853 0 2.289464 15.76899 0 3.615988 16.27411 0 5.013399 16.69567 0 6.472889 17.04545 0 7.98565 17.3352 0 9.542873 17.57671 0 10.51169 17.70044 0 11.46828 17.79187 0 12.40742 17.84122 0 13.32391 17.83871 0 14.21252 17.77456 0 15.06807 17.639 0 15.88532 17.42224 0 16.65909 17.1145 0 17.38414 16.70601 0 18.05528 16.18698 0 18.66729 15.54763 0 19.21497 14.77818 0 19.64888 13.93602 0 19.92076 13.10451 0 20.04686 12.28089 0 20.04342 11.46235 0 19.92666 10.64611 0 19.71282 9.829375 0 19.41813 9.009358 0 19.05883 8.183268 0 -1.206433 3.109268 0 -1.729246 3.815819 0 -2.307502 4.507475 0 -2.888686 5.195116 0 -3.420508 5.887115 0 -3.851538 6.58951 0 -4.133701 7.307303 0 -4.224493 8.050302 0 -4.078482 8.847964 0 -3.507697 10.23627 0 -2.804507 11.46715 0 -1.980673 12.54554 0 -1.043938 13.48443 0 -0.001741886 14.29621 0 1.138391 14.99266 0 2.368582 15.58511 0 3.680536 16.08468 0 5.065629 16.50253 0 6.515029 16.84988 0 8.0198 17.13811 0 9.570872 17.37866 0 10.53388 17.50165 0 11.48305 17.59237 0 12.4124 17.6412 0 13.31642 17.63873 0 14.18963 17.5757 0 15.02667 17.44306 0 15.82251 17.23199 0 16.57265 16.93364 0 17.2733 16.5389 0 17.92112 16.0379 0 18.51278 15.41982 0 19.04374 14.67386 0 19.46375 13.85864 0 19.72555 13.05799 0 19.8468 12.26609 0 19.84348 11.477 0 19.73029 10.68573 0 19.52159 9.88864 0 19.23213 9.08314 0 18.87718 8.267069 0</float_array>
+          <technique_common>
+            <accessor source="#Mesh_002-mesh-positions-array" count="82" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Mesh_002-mesh-normals">
+          <float_array id="Mesh_002-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Mesh_002-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Mesh_002-mesh-map-0">
+          <float_array id="Mesh_002-mesh-map-0-array" count="480">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Mesh_002-mesh-map-0-array" count="240" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Mesh_002-mesh-vertices">
+          <input semantic="POSITION" source="#Mesh_002-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_003-material" count="80">
+          <input semantic="VERTEX" source="#Mesh_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Mesh_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Mesh_002-mesh-map-0" offset="2" set="0"/>
+          <p>42 0 0 0 0 1 41 0 2 43 0 3 1 0 4 42 0 5 44 0 6 2 0 7 43 0 8 45 0 9 3 0 10 44 0 11 46 0 12 4 0 13 45 0 14 47 0 15 5 0 16 46 0 17 48 0 18 6 0 19 47 0 20 48 0 21 8 0 22 7 0 23 49 0 24 9 0 25 8 0 26 51 0 27 9 0 28 50 0 29 51 0 30 11 0 31 10 0 32 52 0 33 12 0 34 11 0 35 53 0 36 13 0 37 12 0 38 54 0 39 14 0 40 13 0 41 55 0 42 15 0 43 14 0 44 56 0 45 16 0 46 15 0 47 57 0 48 17 0 49 16 0 50 58 0 51 18 0 52 17 0 53 59 0 54 19 0 55 18 0 56 60 0 57 20 0 58 19 0 59 62 0 60 20 0 61 61 0 62 63 0 63 21 0 64 62 0 65 64 0 66 22 0 67 63 0 68 65 0 69 23 0 70 64 0 71 66 0 72 24 0 73 65 0 74 67 0 75 25 0 76 66 0 77 68 0 78 26 0 79 67 0 80 69 0 81 27 0 82 68 0 83 70 0 84 28 0 85 69 0 86 71 0 87 29 0 88 70 0 89 71 0 90 31 0 91 30 0 92 72 0 93 32 0 94 31 0 95 74 0 96 32 0 97 73 0 98 75 0 99 33 0 100 74 0 101 75 0 102 35 0 103 34 0 104 76 0 105 36 0 106 35 0 107 77 0 108 37 0 109 36 0 110 78 0 111 38 0 112 37 0 113 79 0 114 39 0 115 38 0 116 80 0 117 40 0 118 39 0 119 42 0 120 1 0 121 0 0 122 43 0 123 2 0 124 1 0 125 44 0 126 3 0 127 2 0 128 45 0 129 4 0 130 3 0 131 46 0 132 5 0 133 4 0 134 47 0 135 6 0 136 5 0 137 48 0 138 7 0 139 6 0 140 48 0 141 49 0 142 8 0 143 49 0 144 50 0 145 9 0 146 51 0 147 10 0 148 9 0 149 51 0 150 52 0 151 11 0 152 52 0 153 53 0 154 12 0 155 53 0 156 54 0 157 13 0 158 54 0 159 55 0 160 14 0 161 55 0 162 56 0 163 15 0 164 56 0 165 57 0 166 16 0 167 57 0 168 58 0 169 17 0 170 58 0 171 59 0 172 18 0 173 59 0 174 60 0 175 19 0 176 60 0 177 61 0 178 20 0 179 62 0 180 21 0 181 20 0 182 63 0 183 22 0 184 21 0 185 64 0 186 23 0 187 22 0 188 65 0 189 24 0 190 23 0 191 66 0 192 25 0 193 24 0 194 67 0 195 26 0 196 25 0 197 68 0 198 27 0 199 26 0 200 69 0 201 28 0 202 27 0 203 70 0 204 29 0 205 28 0 206 71 0 207 30 0 208 29 0 209 71 0 210 72 0 211 31 0 212 72 0 213 73 0 214 32 0 215 74 0 216 33 0 217 32 0 218 75 0 219 34 0 220 33 0 221 75 0 222 76 0 223 35 0 224 76 0 225 77 0 226 36 0 227 77 0 228 78 0 229 37 0 230 78 0 231 79 0 232 38 0 233 79 0 234 80 0 235 39 0 236 80 0 237 81 0 238 40 0 239</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="BézierCircle" name="BézierCircle" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Mesh_002-mesh" name="BézierCircle">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_003-material" target="#Material_003-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
